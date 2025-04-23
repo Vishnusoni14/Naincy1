@@ -80,10 +80,7 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-        [
-            InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/MUNNA_MUSIC_BOT?startgroup=true",)
-            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")
-        ],
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
 
